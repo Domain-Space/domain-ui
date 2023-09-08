@@ -1,0 +1,33 @@
+{
+  "name": "domain-ui",
+  "version": "1.0.0",
+  "description": "A front-end UI framework.",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest",
+    "lint": "eslint --ext .js,.ts,.jsx,.tsx --fix ./packages"
+  },
+  "keywords": [
+    "React",
+    "UI"
+  ],
+  "author": "Domain-Space",
+  "license": "MIT",
+  "devDependencies": {
+    "@commitlint/cli": "^17.7.1",
+    "@commitlint/config-conventional": "^17.7.0",
+    "@typescript-eslint/eslint-plugin": "^6.5.0",
+    "@typescript-eslint/parser": "^6.5.0",
+    "commitlint": "^17.7.1",
+    "eslint": "^8.48.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^14.0.1",
+    "prettier": "^3.0.3",
+    "vitest": "^0.34.3"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": "eslint --fix"
+  }
+}
