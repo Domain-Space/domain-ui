@@ -4,7 +4,7 @@
   "description": "A front-end UI framework.",
   "main": "index.js",
   "scripts": {
-    "test": "vitest",
+    "test": "vitest --watch=false",
     "lint": "eslint --ext .js,.ts,.jsx,.tsx --fix ./packages"
   },
   "keywords": [

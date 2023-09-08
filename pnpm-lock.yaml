@@ -43,6 +43,8 @@ importers:
 
   packages/do: {}
 
+  packages/shared: {}
+
 packages:
 
   /@aashutoshrathi/word-wrap@1.2.6:
