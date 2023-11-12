@@ -1,0 +1,10 @@
+{
+  "name": "@do-ui/play",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite"
+  },
+  "devDependencies": {
+    "do-ui": "workspace:^"
+  }
+}

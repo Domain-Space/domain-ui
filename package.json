@@ -13,11 +13,20 @@
   ],
   "author": "Domain-Space",
   "license": "MIT",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
   "devDependencies": {
+    "@types/react": "^18.2.18",
+    "@types/react-dom": "^18.2.7",
+    "@vitejs/plugin-react": "^4.0.4",
     "@commitlint/cli": "^17.7.1",
     "@commitlint/config-conventional": "^17.7.0",
     "@typescript-eslint/eslint-plugin": "^6.5.0",
     "@typescript-eslint/parser": "^6.5.0",
+    "@unocss/preset-mini": "^0.55.7",
+    "@unocss/preset-uno": "^0.55.7",
     "commitlint": "^17.7.1",
     "eslint": "^8.48.0",
     "eslint-config-prettier": "^9.0.0",
@@ -25,7 +34,13 @@
     "husky": "^8.0.3",
     "lint-staged": "^14.0.1",
     "prettier": "^3.0.3",
-    "vitest": "^0.34.3"
+    "tsup": "^7.2.0",
+    "unocss": "^0.55.7",
+    "vitest": "^0.34.3",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.9"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": "eslint --fix"

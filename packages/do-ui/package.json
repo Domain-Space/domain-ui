@@ -1,0 +1,29 @@
+{
+  "name": "do-ui",
+  "version": "1.0.0",
+  "main": "./dist/do-ui.umd.cjs",
+  "module": "./dist/do-ui.js",
+  "types": "./dist/do-ui.d.ts",
+  "scripts": {
+    "dev": "npm run shortcuts && vite",
+    "build": "vite build --watch",
+    "shortcuts": "node ./scripts/shortcuts.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/types/do-ui/index.d.ts",
+      "import": "./dist/do-ui.js",
+      "require": "./dist/do-ui.umd.cjs"
+    },
+    "./dist/style.css": "./dist/style.css"
+  },
+  "type": "module",
+  "devDependencies": {
+    "@do-ui/preset": "workspace:^",
+    "vite-plugin-dts": "^3.6.3",
+    "vite-plugin-restart": "^0.3.1"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "@do-ui/preset",
+  "version": "1.0.0",
+  "description": "Css rules for unocss preset",
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsup"
+  }
+}
