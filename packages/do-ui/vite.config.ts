@@ -21,7 +21,8 @@ export default defineConfig({
     UnoCSS(),
     dts({ rollupTypes: true, include: ["./components", './index.ts']}),
     ViteRestart({
-      restart: ["components/**/style/*.ts"]
+      restart: ["components/**/style/*.ts"],
+      reload: ["components/**/*.{ts,tsx}"]
     })
   ]
 })
