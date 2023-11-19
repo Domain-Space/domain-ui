@@ -10,11 +10,10 @@ import type { UserShortcuts } from "unocss"
 const styles = []
 
 fs.readdirSync(componentsPath).forEach((file) => {
-  if (file !== "style") {
-    const shortcuts = file + "Shortcuts"
-    styles.push("..." + shortcuts)
-    style += `import { ${shortcuts} } from "../${file}/style"\n`
-  }
+  if (file === "style" || file.endsWith(".d.ts")) return
+  const shortcuts = file + "Shortcuts"
+  styles.push("..." + shortcuts)
+  style += `import { ${shortcuts} } from "../${file}/style"\n`
 })
 
 style += `export default [

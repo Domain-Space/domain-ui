@@ -22,7 +22,9 @@
   },
   "type": "module",
   "devDependencies": {
+    "@do-ui/shared": "workspace:^",
     "@do-ui/preset": "workspace:^",
+    "@unocss/transformer-attributify-jsx": "^0.57.4",
     "vite-plugin-dts": "^3.6.3",
     "vite-plugin-restart": "^0.3.1"
   }

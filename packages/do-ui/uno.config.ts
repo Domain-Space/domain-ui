@@ -5,6 +5,7 @@ import {
   presetUno,
   presetWebFonts
 } from "unocss"
+import transformerAttributifyJsx from "@unocss/transformer-attributify-jsx"
 import {
   darkTheme,
   getCSSPreflights,
@@ -12,9 +13,11 @@ import {
   presetDo
 } from "@do-ui/preset"
 import shortcuts from "./components/style"
+const safelist = (shortcuts as string[][]).map((s) => s[0])
 
 export default defineConfig({
   shortcuts,
+  safelist,
   presets: [
     presetUno(),
     presetAttributify(),
@@ -31,6 +34,7 @@ export default defineConfig({
     }),
     presetDo()
   ],
+  transformers: [transformerAttributifyJsx()],
   preflights: [
     {
       getCSS: () => `
