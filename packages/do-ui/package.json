@@ -7,7 +7,8 @@
   "scripts": {
     "dev": "npm run shortcuts && vite",
     "build": "vite build --watch",
-    "shortcuts": "node ./scripts/shortcuts.js"
+    "shortcuts": "node ./scripts/shortcuts.js",
+    "new": "node ./scripts/new.js"
   },
   "files": [
     "dist"

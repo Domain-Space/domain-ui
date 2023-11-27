@@ -4,6 +4,7 @@
   "description": "A front-end UI framework.",
   "main": "index.js",
   "scripts": {
+    "new": "cd ./packages/do-ui && npm run new",
     "preinstall": "npx only-allow pnpm",
     "test": "vitest --watch=false",
     "lint": "eslint --ext .js,.ts,.jsx,.tsx --fix ./packages"
